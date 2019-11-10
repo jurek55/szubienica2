@@ -1,0 +1,7 @@
+Zapraszam do zagrania w znaną grę w wersji komputerowej. Jeśli masz tyle lat co ja, z całą pewnością znasz zasady. Dla znacznie młodszych krótkie wyjaśnienie:
+1. Wybierasz jedną z proponowanych kategorii hasła
+2. W miejsce kresek wpisujesz - przy pomocy wyświetlonej klawiatury - litery
+3. Wygrasz jeśli odgadniesz hasło przy - co najwyżej - 10. nieodgadniętych literach
+
+
+Miłej zabawy !
