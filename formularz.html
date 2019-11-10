@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Formularz</title>
 <meta charset="utf8">
-
+<script rel="javascript" src="jquery321.js" type="text/javascript"></script>
+<script rel="javascript" src="admin.js" type="text/javascript"></script>
+<link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
 
-<h1>Panel administracyjny</h1>
+<header style="text-align: center"><h3>Panel administracyjny</h3></header>
+<section class="form-wrap">
+    <div class="tab-group">
+        <div class="tab-active">
+            <a href="#signup">Rejestracja</a>
+        </div>
+        <div class="tab">
+            <a href="#login">Logowanie</a>
+        </div>
+    </div>
+   <!-- <div class="break"></div>-->
+    
+    <div class="form-content">
+        <div id="signup">
+            <h2>Zarejestruj się, to nic nie kosztuje</h2>
+            <form action="paneladmin.php" method="post">
+                <div class="top-row">
+                    <div class="field-wrap">
+                        <label>Nazwa użytkownika</label>
+                        <input type="text" name="user" maxlength="15" autofocus required autocomplete="off">
+                    </div>
+                    <div class="field-wrap">
+                        <label>email</label>
+                        <input type="email" name="email" autocomplete="off" required>
+                    </div>
+                    <div class="field-wrap">
+                        <label>Ustaw swoje hasło</label>
+                        <input type="password" name="password" autocomplete="off" required>
+                    </div>
+                    <div class="field-wrap">
+                            <label></label>
+                            <input type="submit" value="Rejestracja">
+                    </div>
+                </div>
+            </form>
+        </div>
+            <div id="login">
+                    <h2>Zaloguj się do panelu</h2>
+                    <form action="paneladmin.php" method="post">
+                        <div class="top-row">
+                            <div class="field-wrap">
+                                <label>Nazwa użytkownika</label>
+                                <input type="text" name="user" maxlength="15" autofocus required autocomplete="off">
+                            </div>
+                            <!--<div class="field-wrap">
+                                <label>email</label>
+                                <input type="email" name="email" autocomplete="off" required>
+                            </div>-->
+                            <div class="field-wrap">
+                                <label>Podaj swoje hasło</label>
+                                <input type="password" name="password" autocomplete="off" required>
+                            </div>
+                            <div class="field-wrap">
+                                    <label></label>
+                                    <input type="submit" value="Logowanie">
+                            </div>
+                        </div>
+                    </form>
+            
+            </div>
+    </div>
+</section>
+<!--<h1>Panel administracyjny</h1>
 <h3><a href='index.php'>Rozpocznij grę bez logowania</a></h3><br><br>
 <h3>Rejestracja nowego użytkownika</h3><br>
 <form action="paneladmin.php" method="post">
@@ -15,13 +80,13 @@ Login: <input type="text" name="user" autofocus><br><br>
 email: <input type="email" name="email"><br><br>
 Hasło: <input type="password" name="password"><br><br>
 
-<!--<h3>Zaloguj się jeśli masz konto</h3>
+<h3>Zaloguj się jeśli masz konto</h3>
 <form action="paneladmin.php" method="post">
 Login: <input type="text" name="login" autofocus><br><br>
 Hasło: <input type="password" name="password"><br><br>
-email: <input type="email" name="email"><br><br>-->
+email: <input type="email" name="email"><br><br>
 
 <input type="submit" value="Wyślij dane">
-</form>
+</form>-->
 </body>
 </html>
