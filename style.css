@@ -213,4 +213,63 @@ section.kategoria
     cursor: pointer;
     background-color: #999999;
 }
+.form-wrap
+{
+    margin-left: 25%;
+    width: 50%;
+    
+}
+
+.tab-active
+{
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    background-color: lightgreen;
+}
+.tab
+{
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    background-color: green;
+}
+ul
+{
+    list-style-type: none;
+}
+h2{
+    text-align: center;
+    padding: 50px 0 0px 0;
+   
+}
+#signup
+{
+    background-color: lightgreen;
+    padding: 10px 0 20px 0;
+    min-height: 240px;
+}
+#login
+{
+    background-color: green;
+    padding: 10px 0 20px 0;
+    min-height: 240px;
+}
+.field-wrap
+{
+   font-size: 15px;
+   padding: 0 0 5px 145px;
+}
+label
+{
+    float: left;
+    display: block;
+    width: 200px;
+    height: 25px;
+    
+}
+
+
 
