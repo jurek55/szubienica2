@@ -18,5 +18,15 @@ function rejestracja(){
 }
 
 function Logowanie(){
+    require_once 'connect.php';
+    $polaczenie=new mysqli($hostname, $username, $user_password, $db_name);
+    if (!$polaczenie->connect_errno){
+        $user=$_POST['user'];
+        $password=$_POST['password'];
+        $hash=password_hash($password, PASSWORD_DEFAULT);
+        $email=$_POST['email'];
 
+    $sql="SELECT * FROM uzytkownicy WHERE user=$user";
+    $wynik=$polaczenie->query($sql);
+    $ile_wierszy=$wynik->num_rows;
 }
