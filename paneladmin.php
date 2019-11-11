@@ -40,6 +40,6 @@ function Logowanie(){
 
 }
 }
-//rejestracja();
+rejestracja();
 
-Logowanie();
+//Logowanie();
