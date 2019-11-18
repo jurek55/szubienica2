@@ -4,7 +4,7 @@ class Losowanie{
     private $polaczenie;
     private $kategoria;
 
-    public function __construct(){
+    public function DbConnection(){
         require_once "connect.php";
         $this->kategoria=$_GET['kategoria'];
         $this->polaczenie=new mysqli($hostname, $username, $user_password, $db_name);
@@ -15,6 +15,11 @@ class Losowanie{
             $this->polaczenie->query("SET NAMES 'utf8' COLLATE 'utf8_polish_ci'");
         }
     }
+
+    public function DbDisconnection(){
+        $this->polaczenie->close();
+    }
+    
     public function Haslo(){
         $sql_has = "(select *, upper(haslo) as haslo from hasla where kategoria=$this->kategoria)";
         $hasla_zestaw=$this->polaczenie->query($sql_has);
