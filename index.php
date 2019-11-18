@@ -28,6 +28,7 @@
     
 <head>
     <meta charset="utf8">
+    <meta name="viewport" content="width=device-width">
     <title>Szubienica</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -37,20 +38,21 @@
 
 <body>
 <input type="hidden" id="spis_kategorii" value='<?php echo $json_kategorie ?>'>
-<div class="container">
+
+    
+    
+    <div class="container">
     <header>SZUBIENICA bez szubienicy,<br> czyli odgadnij hasło !</header>
     <div class="wyroznienie">(test wiedzy dla prawdziwych twardzieli)</div>
-    
-   
     <div class="okladka">
     <header>Kategorie do wyboru to:</header>
     <ol></ol>
     </div>
-    <div class="image"><img src="img/mysle.png"></div>
-
-    <div class="okladka">
-    <header>Zasady gry</header><br>
-    Zapraszam do zagrania w znaną grę w wersji komputerowej. Jeśli masz tyle lat co ja, z całą pewnością znasz zasady. Dla znacznie młodszych krótkie wyjaśnienie:<br>
+  <div class="image start"><img src="img/mysle.png"></div>
+  
+    <div class="okladka tytul">
+   
+    <header>Zasady gry</header>
     <ol>
         <li>Wybierasz jedną z proponowanych kategorii hasła</li>
         <li>W miejsce kresek wpisujesz - przy pomocy wyświetlonej klawiatury - litery</li>
@@ -58,11 +60,13 @@
     </ol>
 
     Miłej zabawy !
+    <div class="break"></div>
+    
     </div>
-    <div class="okladka_bottom">Gotowe ? ...  &nbsp;&nbsp; <a href="http://localhost/strony/szubienica2/poczatek.php">    No to podejmij wyzwanie :-)</a>
+    <div class="okladka_bottom">Gotowe ? ...  &nbsp;&nbsp; <a href="/strony/szubienica2/szubienica/poczatek.php"> <!--<a href="https://jkunicki.pl/szubienica/poczatek.php">-->   No to podejmij wyzwanie :-)</a>
     </div>
-</div>
 
+</div>
 
 </body>
 </html>
