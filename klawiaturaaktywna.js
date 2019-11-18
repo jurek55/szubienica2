@@ -37,7 +37,7 @@ var klawiatura = {
             else 
                 wpis = wpis + wpis3;
         };
-        $(".klawiatura").html(wpis);
+        $(".okladka").html(wpis);
 
         $("button").on("click",function(){   
             if($("#lit"+$(this).text()).val()=='litera_akt'){
@@ -59,9 +59,9 @@ var klawiatura = {
             wpis=wpis+'<button class="menu" id="m'+i+'">'+this.pozycje_menu[i]+'</button>'
         };
 
-        $(".klawiatura").html(wpis);
-        $(".klawiatura").hide();
-        $(".klawiatura").show(1500);
+        $(".okladka").html(wpis);
+        $(".okladka").hide();
+        $(".okladka").show(1500);
 
         $(".menu").on("click", function(){
             var z=($(this).text());
@@ -76,7 +76,7 @@ var klawiatura = {
     timer: function(start){
         if (start>-2){
             var wpis='<div class="zegar" style="font-size: 70px; color: red;">'+start+' s</div>';
-            if (start>0) {$(".klawiatura").html(wpis)} else $(".klawiatura").html('');
+            if (start>0) {$(".okladka").html(wpis)} else $(".okladka").html('');
             start--;
             setTimeout(function(){klawiatura.timer(start)}, 1000);
         };
@@ -85,7 +85,7 @@ var klawiatura = {
     efekt_sukces: function(){
 
             $("img").hide(500, function(){
-            $(".obraz").html('<a href="https://www.gify.net/cat-fajerwerki-i-sztuczne-ognie-492.htm"><img src="https://www.gify.net/data/media/492/fajerwerk-ruchomy-obrazek-0065.gif" border="0" alt="fajerwerk-ruchomy-obrazek-0065" /></a>');
+            $(".image").html('<a href="https://www.gify.net/cat-fajerwerki-i-sztuczne-ognie-492.htm"><img src="https://www.gify.net/data/media/492/fajerwerk-ruchomy-obrazek-0065.gif" border="0" alt="fajerwerk-ruchomy-obrazek-0065" /></a>');
             aplauz.play();
             $("img").hide();    
             $("img").show(1000); 
@@ -119,7 +119,7 @@ function Gra(){
     
    $(document).ready(function(){
 
-        $(".obraz").html("<img src='img/mysle.png'>"); 
+        $(".image").html("<img src='img/mysle.png'>"); 
 
         if (wynikobj.sukces){
             klawiatura.efekt_sukces();
@@ -129,7 +129,7 @@ function Gra(){
 
        if ((wynikobj.liczba_bl>10) && (!wynikobj.sukces)){
             $("img").hide(500, function(){
-            $(".obraz").html("<img src='img/ojej_prawo.png'>");
+            $(".image").html("<img src='img/ojej_prawo.png'>");
             $("img").hide();    
             $("img").show(1000); 
             });
