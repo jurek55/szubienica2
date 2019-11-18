@@ -7,7 +7,6 @@
 <script rel="javascript" src="admin.js" type="text/javascript"></script>
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
-
 <body>
 <!--początek kodu-->
 <header style="text-align: center"><h3>Panel administracyjny</h3></header>
@@ -38,6 +37,7 @@
                     <div class="field-wrap">
                         <label>Ustaw swoje hasło</label>
                         <input type="password" name="password" autocomplete="off" required>
+                        <input type="hidden" name="action" value="signup">
                     </div>
                     <div class="field-wrap">
                             <label></label>
@@ -57,6 +57,7 @@
                             <div class="field-wrap">
                                 <label>Podaj swoje hasło</label>
                                 <input type="password" name="password" autocomplete="off" required>
+                                <input type="hidden" name="action" value="signin">
                             </div>
                             <div class="field-wrap">
                                     <label></label>
