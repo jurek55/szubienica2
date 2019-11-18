@@ -1,65 +1,88 @@
-:root{
+
+:root {
     --kolor_podstawowy: #cccccc;
+    --klawisz: 45px;
 }
 body{
     background-color: var(--kolor_podstawowy);
     margin: 0px;
     font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
 }
 header
 {
-    padding: 30px 0 0 0;
-    font-size: 30px;
+    padding: 10px 0 0 0;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
+    box-sizing: border-box;
+    min-width: 200px;
+}
+div.kategoria header {
+    padding: 5px;
 }
 .container 
 {
-    width: 100%;
+    width: 100vw;
     margin-left: auto;
     margin-right:auto;
-    height: 100px;
+    box-sizing: border-box;
+    height: 100vh;
+    padding-bottom: 20px;
+    min-width: 470px;
 }
 .okladka
 {
     float: left;
-    text-align: center;
-    margin-left: 80px;
-    margin-top: 40px;
-    width: 25%;
+    width: 30%;
     font-size: 20px;
     font-stretch: extra-expanded;
     letter-spacing: 2px;
     text-align: justify;
+    box-sizing: border-box;
+    min-width: 250px;
+    padding: 0 0 0 15px;
 }
-div.okladka_bottom
-{
-   padding: 40px;
-   clear: both;
-   text-align: center;
-   font-size: 30px;
-   font-weight: bold;
-   
+.tytul {
+    min-width: 300px;
 }
 
+.klawisze {
+    padding-top: 40px;
+}
 .image {
-    margin-top: 100px;
-    float: left;
+    width: 20%px;
     
-    margin-left: 100px;
+    float: left;
+    min-width: 250px;
+    padding: 10px 50px 0 50px;
+    box-sizing: border-box;
+
+}
+.start {
+    padding-top: 40px;
+    height: 100px;
+}
+
+div.okladka_bottom
+{
+   padding: 20px 40px 0 40px;
+   clear: both;
+   text-align: center;
+   font-size: 20px;
+   font-weight: bold;
 }
 
 img {
-    height: 200px;
-    width: 200px;
+    max-height: 80px;
+    max-width: 80px;
 }
 
-ol
-{
-    font-size: 20px;
-    width: 400px;
+ol {
+    font-size: 15px;
+    width: 100%;
     text-align: left;
-    margin-left: 100px;
+    margin-left: auto;
 }
 a{
     text-decoration: none;
@@ -71,47 +94,48 @@ a:hover{
 .haslo
 {
     width: 100%;
-    min-height: 100px;
-    font-size: 40px;
+    font-size: 25px;
     text-align: center;
-    padding: 50px 0 50px 0;
     font-family: 'PT Mono', monospace;
+    padding: 5px 0 10px 0;
+    margin: 15px 0 15px 0;
+    min-width: 350px;
+    box-sizing: border-box;
 }
 .lit_pudlo{
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
+    width: var(--klawisz);
+    height: var(--klawisz);
+    font-size: 20px;
     text-align: center;
     float: left;
-    /*margin: 2px;*/
     color: green;
     padding: 6px;
     box-shadow: 5px 5px 10px black;
     background-color: red;
     cursor: default;
-
 }
 .lit_traf{
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
+    width: var(--klawisz);
+    height: var(--klawisz);
+    font-size: 20px;
     text-align: center;
     float: left;
-    /*margin: 2px;*/
     color: white;
     padding: 6px;
     box-shadow: 5px 5px 10px black;
     background-color: green;
     cursor: default;
-    
 }
 .kategoria
 {
     float: left;
-    width: 33%;
-    font-size: 30px;
+    width: 30%;
+    font-size: 20px;
     align-content: center;
-    
+    min-width: 200px;
+    padding: 0 0 0px 0;
+    box-sizing: border-box;
+  /*  height: 100%;*/
 }
 section.kategoria
 {
@@ -135,12 +159,11 @@ section.kategoria
 
 .litera_akt1
 {
-    width: 50px;
-    height: 50px;
+    width: var(--klawisz);
+    height: var(--klawisz);
     font-size: 30px;
     text-align: center;
     float: left;
-    /*margin: 2px;*/
     color: green;
     padding: 6px;
     box-shadow: 5px 5px 10px black;
@@ -149,14 +172,12 @@ section.kategoria
 }
 .litera_akt
 {
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
+    width: var(--klawisz);
+    height: var(--klawisz);
+    font-size: 20px;
     text-align: center;
     float: left;
-    /*margin: 2px;*/
     color: green;
-    padding: 6px;
     box-shadow: 5px 5px 10px black;
     cursor: pointer;
     background-color: #cccccc;
@@ -168,9 +189,9 @@ section.kategoria
 }
 .litera
 {
-    min-width: 32px;
-    min-height: 32px;
-    font-size: 30px;
+    width: 20%;
+    min-height: 10px;
+    font-size: 100%;
     text-align: center;
     float: left;
     margin: 2px;
@@ -180,18 +201,19 @@ section.kategoria
 }
 .klawiatura
 {
-    float: left;
-    width: 33%;
-    margin-top: 40px;
-    margin-left: 7px;
-    align-self: auto;
+    min-width: 300px;
+    display: inline-block;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0 0 100px 0;
 }
 .obraz
 {
-    width: 33%;
+    width: 20%;
     height: 100px;
     float: left;
     align-content: center;
+    min-width: 85px;
     
 }
 .break
@@ -200,13 +222,14 @@ section.kategoria
 }
 .menu
 {
-    width: 300px;
-    height: 50px;
-    font-size: 30px;
+    width: 240px;
+    height: 30px;
+    font-size: 22px;
     background-color: #cccccc;
     box-shadow: 5px 5px 10px black;
     text-align: left;
     padding: 0 0 0 40px;
+    display: block;
 }
 .menu:hover
 {
@@ -270,6 +293,8 @@ label
     height: 25px;
     
 }
-
+p {
+    font-size: 15px;
+}
 
 
