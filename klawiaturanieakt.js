@@ -32,7 +32,7 @@ var klawiatura = {
             else 
                 wpis = wpis + wpis3;
         };
-        $(".klawiatura").html(wpis);
+        $(".okladka").html(wpis);
     },
     identyfikator: function(i){
         var id = this.klawisze_d()[i];
