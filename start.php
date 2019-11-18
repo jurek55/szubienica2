@@ -12,6 +12,7 @@ require_once "testy.php";
 <html>
 <head>
     <meta charset="utf8">
+    <meta name="viewport" content="width=device-width">
     <title>Szubienica</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap&subset=latin-ext" rel="stylesheet">
@@ -26,16 +27,15 @@ require_once "testy.php";
 <div class="container">
 <header>HASŁO DO ODGADNIĘCIA</header>
 <div class="haslo"></div>
-
 <div class="kategoria">
 <header>Wybrana kategoria:</header>
 <section class="kategoria" id="kat"></section>
 </div>
-
-<div class="obraz"></div>
+<div class="image"></div>
+<div class="okladka klawisze"></div>
+<div class="break"></div>
 </div>
 
-<div class="klawiatura"></div>
 <input type="hidden" id="litA" value="<?php echo $_SESSION['l0'] ?>">
 <input type="hidden" id="litĄ" value="<?php echo $_SESSION['l1'] ?>">
 <input type="hidden" id="litB" value="<?php echo $_SESSION['l2'] ?>">
