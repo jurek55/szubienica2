@@ -24,8 +24,10 @@ public function __construct(){
     $this->haslo='';
     $this->haslo_='';
     if (isset($_GET['kategoria'])){
-    $this->losowanie_ob= new Losowanie();
-    $this->haslo_ob= new Haslo($this->losowanie_ob->Haslo());
+        $this->losowanie_ob= new Losowanie();
+        $this->losowanie_ob->DbConnection();
+        $this->haslo_ob= new Haslo($this->losowanie_ob->Haslo());
+        //$this->losowanie_ob->DbDisconnection();
     } else {
         $this->haslo_ob= new Haslo($_SESSION['haslo']);  
     };
